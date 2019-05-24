@@ -29,5 +29,10 @@ public class MainClass
         beanDefinitionReader.loadBeanDefinitions(new ClassPathResource("beans.xml"));
         Movie mo=(Movie)((DefaultListableBeanFactory)beanDefinitionRegistry).getBean("movies1");
         System.out.println("Actor information using application context:\n "+mo);
+        //testing the scope
+        ApplicationContext application=new ClassPathXmlApplicationContext("beans.xml");
+        Movie movie2=(Movie) application.getBean("movies");
+        Movie movie3=(Movie) applicationContext.getBean("movies");
+        System.out.println(movie2==movie3);
     }
 }
