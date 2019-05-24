@@ -34,5 +34,11 @@ public class MainClass
         Movie movie2=(Movie) application.getBean("movies");
         Movie movie3=(Movie) applicationContext.getBean("movies");
         System.out.println(movie2==movie3);
+
+        Movie movie1=(Movie) application.getBean("MovieA");
+        System.out.println("Changing the id of beans"+movie1);
+        //changing the id to name in beans.xml
+        Movie movie4=(Movie) application.getBean("MovieB");
+        System.out.println("Changing the id of beans"+movie4);
     }
 }
