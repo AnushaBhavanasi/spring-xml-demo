@@ -19,9 +19,7 @@ public class MainClass
     {
         ApplicationContext application=new ClassPathXmlApplicationContext("beans.xml");
         Movie movie=(Movie)application.getBean("movies");
-        System.out.println("Changing the Actor constructor to autowire \n"+movie);
-        Movie movie1=(Movie)application.getBean("movie");
-        System.out.println("Changing the Actor constructor to autowire to byType \n"+movie1);
+        System.out.println("Actor details \n"+movie);
 
     }
 }
