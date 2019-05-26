@@ -19,16 +19,7 @@
     <bean id="movie"  class="com.stackroute.domain.Movie">
         <constructor-arg ref="actor"/>
     </bean>
-    <bean id="applicationcontextAwareDemo" class="com.stackroute.awareinterface.ApplicationContextAwareDemo">
-
-    </bean>
-    <bean id="beanFactory" class="com.stackroute.awareinterface.BeanFactoryAwareDemo">
-
-    </bean>
-    <bean id="beanName" class="com.stackroute.awareinterface.BeanNameAwareDemo">
-
-    </bean>
-    <bean id="resourceLoader" class="com.stackroute.awareinterface.ResourceLoaderAwareDemo">
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
 
     </bean>
 </beans>

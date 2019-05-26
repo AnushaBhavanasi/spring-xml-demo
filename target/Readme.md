@@ -1,7 +1,12 @@
-Spring practice excersise task3
--->From the constructor-injection branch of spring-xml-demo repo create a autowire-xml branch.
- For the Movie bean, delete the constructor based object injection in the bean definition file (beans.xml) that injects an Actor bean.
- Use autowire byName in the Movie bean to inject an Actor bean. Run the application.
- Create another Movie bean and try autowire byType. Run the application and note the exception thrown.
- Fix the Movie bean by removing autowire byType and using constructor injection instead.
- Push the code to autowire-xml branch
+Spring practice excersise task5
+-->From the aware-interface branch of spring-xml-demo repo create a bean-lifecyclebranch.
+   Add a BeanLifecycleDemoBean class in com.stackroute.demo that implements
+   1.InitializingBean and
+   2.DisposableBean.
+   Override the required methods to print out messages.
+   Define BeanLifecycleDemoBean as a bean in beans.xml.
+   Run the application and observe the result.Add two methods customInit() and customDestroy() to the BeanLifecycleDemoBean
+   class and print out custom messages.
+   In the BeanLifecycleDemoBean bean definition, in beans.xml, set the customInit() and customDestroy() methods to be called.
+   Run the application.
+   Push the code to bean-lifecycle branch.
