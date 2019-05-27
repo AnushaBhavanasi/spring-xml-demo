@@ -16,10 +16,7 @@
 
     <bean id="movies" autowire="byName" class="com.stackroute.domain.Movie">
     </bean>
-    <bean id="movie"  class="com.stackroute.domain.Movie">
-        <constructor-arg ref="actor"/>
-    </bean>
-    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="customInit" destroy-method="customDestroy">
-
+    <bean id="beanLifecycleDemoBean" class="com.stackroute.demo.BeanLifecycleDemoBean"/>
+    <bean id="beanPostProcessorDemoBean" class="com.stackroute.demo.BeanPostProcessorDemoBean" >
     </bean>
 </beans>
